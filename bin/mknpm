@@ -1,5 +1,8 @@
 #!/bin/bash
 
+if [ "$1" = "" ]; then
+  exit
+fi
 mkdir $1
 cd $1
 npm init -y

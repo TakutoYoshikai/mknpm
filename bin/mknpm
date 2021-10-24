@@ -11,4 +11,5 @@ node $this_dir/index.js package.json $1
 
 mkdir bin
 cd bin
+echo "#!/bin/bash" >> $1
 vim $1

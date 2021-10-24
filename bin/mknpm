@@ -6,6 +6,7 @@ npm init -y
 
 this=$(readlink -f "$0")
 this_dir=`dirname $this`
+this_dir=`dirname $this_dir`
 node $this_dir/index.js package.json $1
 
 mkdir bin

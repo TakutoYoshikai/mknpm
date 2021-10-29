@@ -9,6 +9,10 @@ cd $1
 git init
 echo node_modules/ >> .gitignore
 
+if [ "`command -v mitman`" != "" ]; then
+  mitman $1
+fi
+
 npm init -y
 
 mknpm-package-json package.json $1

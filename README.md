@@ -5,6 +5,7 @@ mknpm is a tool to generate a npm package that has bin directory quickly. You ca
 * macOS or Ubuntu
 * Node.js
 * npm
+* git
 
 ### Usage
 **install**

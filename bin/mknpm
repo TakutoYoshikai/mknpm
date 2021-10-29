@@ -6,6 +6,9 @@ if [ "$1" = "" ]; then
 fi
 mkdir $1
 cd $1
+git init
+echo node_modules/ >> .gitignore
+
 npm init -y
 
 mknpm-package-json package.json $1

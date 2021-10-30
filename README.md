@@ -15,7 +15,7 @@ npm install -g TakutoYoshikai/mknpm
 
 **generate a npm package**
 ```bash
-mknpm <COMMAND NAME>
+mknpm <COMMAND NAME> <AUTHOR NAME>
 ```
 
 ### LICENSE

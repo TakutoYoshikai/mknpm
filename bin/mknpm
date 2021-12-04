@@ -8,6 +8,7 @@ mkdir $1
 cd $1
 git init
 echo node_modules/ >> .gitignore
+echo .DS_Store >> .gitignore
 
 if [ "`command -v mitman`" != "" -a "$2" != "" ]; then
   mitman $1 $2

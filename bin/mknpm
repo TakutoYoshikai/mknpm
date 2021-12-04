@@ -10,7 +10,7 @@ git init
 echo node_modules/ >> .gitignore
 
 if [ "`command -v mitman`" != "" -a "$2" != "" ]; then
-  mitman $2 $1
+  mitman $1 $2
 fi
 
 npm init -y

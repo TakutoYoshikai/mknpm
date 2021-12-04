@@ -10,11 +10,11 @@ git init
 echo node_modules/ >> .gitignore
 echo .DS_Store >> .gitignore
 
+npm init -y
+
 if [ "`command -v mitman`" != "" -a "$2" != "" ]; then
   mitman $1 ${@:2}
 fi
-
-npm init -y
 
 mknpm-package-json package.json $1
 
